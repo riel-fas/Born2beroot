@@ -64,18 +64,29 @@
 
 
 
-wall "	Architecture: $arch
-	CPU physical: $cpuf
-	vCPU: $cpuv
-	Memory Usage: $ram_use/${ram_total}MB ($ram_percent%)
-	Disk Usage: $disk_use/${disk_total} ($disk_percent%)
-	CPU load: $cpu_fin%
-	Last boot: $lb
-	LVM use: $lvmu
-	Connections TCP: $tcpc ESTABLISHED
-	User log: $ulog
-	Network: IP $ip ($mac)
-	Sudo: $cmnd cmd"
+    wall "	Architecture: $arch
+    
+    CPU physical: $cpuf
+    
+    vCPU: $cpuv
+    
+    Memory Usage: $ram_use/${ram_total}MB ($ram_percent%)
+    
+    Disk Usage: $disk_use/${disk_total} ($disk_percent%)
+    
+    CPU load: $cpu_fin%
+    
+    Last boot: $lb
+    
+    LVM use: $lvmu
+    
+    Connections TCP: $tcpc ESTABLISHED
+    
+    User log: $ulog
+    
+    Network: IP $ip ($mac)
+    
+    Sudo: $cmnd cmd"
 
 
   
