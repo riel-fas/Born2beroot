@@ -223,15 +223,7 @@ When setting up UFW in systems where SSH is used for remote access, it is crucia
 
 #### How cron Works:
 - **Cron Daemon (`crond`)**: This is the background process that checks for scheduled tasks and executes them at the appropriate times.
-- **Crontab File**: Users define their tasks in a crontab file, specifying the timing and the command or script to run. The syntax for scheduling tasks follows this structure:
-  ```plaintext
-  * * * * * command-to-execute
-  | | | | |
-  | | | | +-- Day of the week (0 - 7, Sunday is both 0 and 7)
-  | | | +---- Month (1 - 12)
-  | | +------ Day of the month (1 - 31)
-  | +-------- Hour (0 - 23)
-  +---------- Minute (0 - 59)
+- **Crontab File**: Users define their tasks in a crontab file, specifying the timing and the command or script to run.
 
 ---
 ---
@@ -331,14 +323,57 @@ Set password expiration: PASS_MAX_DAYS 30
 # 📊 Monitoring Script: Display System Information
 
     #!/bin/bash
+
+    # Display the system's hostname
+    
     echo "Hostname: $(hostname)"
+
+    # Retrieve the IP address of the machine (all network interfaces)
+    
     echo "IP Address: $(hostname -I)"
+
+    # Check disk usage percentage for the root filesystem
+    # df -h / shows disk usage in human-readable format
+    # awk 'NR==2 {print $5}' selects the usage percentage from the second line
+    
     echo "Disk Usage: $(df -h / | awk 'NR==2 {print $5}')"
+
+    # Retrieve CPU load average
+    # top -bn1 provides a single batch of CPU statistics
+    # grep 'load average' finds the line with load information
+    # awk '{print $10}' extracts the specific load average value
+    
     echo "CPU Load: $(top -bn1 | grep 'load average' | awk '{print $10}')"
+
+    # Calculate RAM usage percentage
+    # free -m shows memory in megabytes
+    # awk 'NR==2' selects the second line (total memory)
+    # $3*100/$2 calculates used memory as a percentage
+    
     echo "RAM Usage: $(free -m | awk 'NR==2 {printf "%.2f%%", $3*100/$2 }')"
+
+    # Count number of currently logged-in users
+    # who lists logged-in users
+    # wc -l counts the number of lines (users)
+    
     echo "Active Users: $(who | wc -l)"
+
+    # Display the timestamp of the last system boot
+    # who -b shows the boot time
+    # awk '{print $3, $4}' extracts date and time
+    
     echo "Last Boot: $(who -b | awk '{print $3, $4}')"
+
+    # List all currently listening network ports
+    # ss -tuln shows TCP/UDP listening sockets
+    # grep LISTEN filters only listening ports
+    
     echo "Listening Ports: $(ss -tuln | grep LISTEN)"
+
+    # Count the number of sudo commands executed
+    # grep COMMAND searches sudo log for command entries
+    # wc -l counts the number of sudo commands
+    
     echo "Sudo Commands Executed: $(grep COMMAND /var/log/sudo/sudo.log | wc -l)"
 
 ---
