@@ -1,4 +1,12 @@
-<p align="center"> <img src="https://img.shields.io/badge/OS-Debian/Rocky-blue?style=for-the-badge&logo=linux" alt="OS"> <img src="https://img.shields.io/badge/VirtualBox-UTM-orange?style=for-the-badge&logo=virtualbox" alt="VirtualBox"> <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Status"> </p> <h1 align="center">🚀 Born2beroot 🚀</h1> <p align="center"> <i>A system administration project from 42 School where you configure a secure virtual machine using Debian or Rocky.</i> </p>
+
+<p align="center"> 
+<img src="https://img.shields.io/badge/OS-Debian/Rocky-blue?style=for-the-badge&logo=linux" alt="OS"> 
+<img src="https://img.shields.io/badge/VirtualBox-UTM-orange?style=for-the-badge&logo=virtualbox" alt="VirtualBox"> 
+<img src="https://img.shields.io/badge/42-Network-black?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiElEQVQ4y2NgGFQggv//CSgoKCgqKioqKSkpKSkpffz48f///f8P0tjR0VHe3t5e29zcXNLc3FzS2NhY0tDQUNLQ0FDS1NRc0traurS1tXVpW1vb0tbW1qVtbW1L29vbl7a3ty9tb29f2tHRsbSjo2Npe3v70s7OzqWdnZ1LBwYGlw4ODi4dGhpaOjQ0tHRkZGTp6Ojo0rGxsaVjY2NLx8fHl46Pjy8dHx9fOjExsXRycnLpzMzM0llg8D8K//37R/Dv3z+Cv3//Evz//5/g+/cfBP/+/Sf4/v0nwe/fvwm+ff9F8OfPX4Kf\n P34T/Pz5i+Dnz98Ev3//Ifj9+y/Bn/2/gAr+ATX+hCr+AVWAqQAW+APU8Aeo4R9Qw19QDf+BGv4BNfwDavgH1PAPqOEfUMM/oIZ/QA3/gBr+ATX8A2r4B9TwD6jhH1DDH6CGf0AN/4Aa/gE1/ANq+AfU8A+o4R9Qwz+ghn9ADf+AGv4BNfwDavgH1PAPqOEfUMM/oIZ/QA3/gBoYAABhKkjR0SIEzwAAAABJRU5ErkJggg==" alt="42 Network"> 
+<img src="https://img.shields.io/badge/1337-Coding-green?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiElEQVQ4y2NgGFQggv//CSgoKCgqKioqKSkpKSkpffz48f///f8P0tjR0VHe3t5e29zcXNLc3FzS2NhY0tDQUNLQ0FDS1NRc0traurS1tXVpW1vb0tbW1qVtbW1L29vbl7a3ty9tb29f2tHRsbSjo2Npe3v70s7OzqWdnZ1LBwYGlw4ODi4dGhpaOjQ0tHRkZGTp6Ojo0rGxsaVjY2NLx8fHl46Pjy8dHx9fOjExsXRycnLpzMzM0llg8D8K//37R/Dv3z+Cv3//Evz//5/g+/cfBP/+/Sf4/v0nwe/fvwm+ff9F8OfPX4Kf\n P34T/Pz5i+Dnz98Ev3//Ifj9+y/Bn/2/gAr+ATX+hCr+AVWAqQAW+APU8Aeo4R9Qw19QDf+BGv4BNfwDavgH1PAPqOEfUMM/oIZ/QA3/gBr+ATX8A2r4B9TwD6jhH1DDH6CGf0AN/4Aa/gE1/ANq+AfU8A+o4R9Qwz+ghn9ADf+AGv4BNfwDavgH1PAPqOEfUMM/oIZ/QA3/gBoYAABhKkjR0SIEzwAAAABJRU5ErkJggg==" alt="1337 Coding"> 
+</p> 
+<h1 align="center">🚀 Born2beroot 🚀</h1> 
+<p align="center"> <i>A system administration project from 42 School where you configure a secure virtual machine using Debian or Rocky.</i> </p>
 
 ---
 
