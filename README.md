@@ -31,8 +31,6 @@
 16. [Bonus](#bonus)
     - [WordPress Installation](#wordpress-installation)
     - [FTP Configuration](#ftp-configuration)
-17. [Submission](#submission)
-18. [Evaluation Knowledge](#evaluation-knowledge)
 
 ---
 
@@ -330,55 +328,18 @@ Set password expiration: PASS_MAX_DAYS 30
 ---
 ---
 
+# 📊 Monitoring Script: Display System Information
 
-
-
-
-
-▶️Profile-based protection: Each application runs with explicitly defined permissions
-
-▶️Two enforcement modes:
-
-   Enforce: Actively blocks unauthorized actions
-
-   Complain: Logs violations without blocking (learning mode)
-
-▶️Path-based controls: Restricts access to files, network ports, and capabilities
-
-
-How It Works:
-
-   *️⃣ System administrator creates security profiles for applications
-
-   *️⃣ AppArmor intercepts system calls and checks them against profiles
-
-   *️⃣ Violations are either blocked or logged based on mode
+    #!/bin/bash
+    echo "Hostname: $(hostname)"
+    echo "IP Address: $(hostname -I)"
+    echo "Disk Usage: $(df -h / | awk 'NR==2 {print $5}')"
+    echo "CPU Load: $(top -bn1 | grep 'load average' | awk '{print $10}')"
+    echo "RAM Usage: $(free -m | awk 'NR==2 {printf "%.2f%%", $3*100/$2 }')"
+    echo "Active Users: $(who | wc -l)"
+    echo "Last Boot: $(who -b | awk '{print $3, $4}')"
+    echo "Listening Ports: $(ss -tuln | grep LISTEN)"
+    echo "Sudo Commands Executed: $(grep COMMAND /var/log/sudo/sudo.log | wc -l)"
 
 ---
-
-Difference between APT and Aptitude <a name="difference-between-apt-and-aptitude"></a>
-
-APT (Advanced Package Tool) and Aptitude are both package management tools for Debian-based systems, but with key differences:
-
-Key Advantages of Each:
-
-   ⏹APT:
-
-Simpler for basic operations
-
-Better for scripting (consistent output format)
-
-Default on most modern Debian systems
-
-   ⏹Aptitude:
-
-Better at resolving complex dependency issues
-
-Visual package browser (press ? for help)
-
-Marks packages as automatically/manually installed
-
-Keeps history of all package changes
-
 ---
-
