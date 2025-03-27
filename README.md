@@ -120,21 +120,21 @@ Core Components:
 
 Physical Volume (PV): 
     
-    Actual storage devices (HDDs, SSDs, partitions)
+   Actual storage devices (HDDs, SSDs, partitions)
     
-    Initialized with pvcreate /dev/sdX
+   Initialized with pvcreate /dev/sdX
 
 Volume Group (VG): 
     
-    Pool of PVs that form shared storage
+   Pool of PVs that form shared storage
      
-    Created with vgcreate vg_name /dev/sdX
+   Created with vgcreate vg_name /dev/sdX
 
 Logical Volume (LV):
 
-    Virtual partitions created from VG space
+   Virtual partitions created from VG space
 
-    Made with lvcreate -L 10G -n lv_name vg_name
+   Made with lvcreate -L 10G -n lv_name vg_name
 
 Advantages Over Traditional Partitioning:
 
@@ -159,19 +159,19 @@ Key Features:
 
 ▶️Two enforcement modes:
 
-    Enforce: Actively blocks unauthorized actions
+   Enforce: Actively blocks unauthorized actions
 
-    Complain: Logs violations without blocking (learning mode)
+   Complain: Logs violations without blocking (learning mode)
 
 ▶️Path-based controls: Restricts access to files, network ports, and capabilities
 
 
 How It Works:
 
-*️⃣ System administrator creates security profiles for applications
+   *️⃣ System administrator creates security profiles for applications
 
-*️⃣ AppArmor intercepts system calls and checks them against profiles
+   *️⃣ AppArmor intercepts system calls and checks them against profiles
 
-*️⃣ Violations are either blocked or logged based on mode
+   *️⃣ Violations are either blocked or logged based on mode
 
 ---
