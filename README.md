@@ -86,3 +86,28 @@ Why Use VMs?
 ✔ Clone/backup entire systems
 
 ---
+
+How do Virtual Machines work? <a name="how-do-virtual-machines-work"></a>
+
+Virtual Machines (VMs) operate through a hypervisor, which acts as a mediator between physical hardware and virtual environments.
+
+
+▶️ Core Mechanism:
+
+Resource Allocation: The hypervisor partitions CPU, RAM, and storage from the host machine. Each VM gets virtualized hardware (vCPU, virtual RAM, virtual disks).
+
+Isolation: VMs run independently—a crash in one VM doesn’t affect others or the host.
+
+Communication: The hypervisor translates VM requests into physical hardware instructions.
+
+
+
+▶️ Key Advantages:
+
+Efficiency: Maximizes hardware usage.
+
+Security: Malware in a VM won’t infect the host.
+
+Portability: VMs can be moved between physical servers.
+
+
