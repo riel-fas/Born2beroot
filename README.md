@@ -110,4 +110,41 @@ Security: Malware in a VM won’t infect the host.
 
 Portability: VMs can be moved between physical servers.
 
+---
+
+What is LVM? <a name="what-is-lvm"></a>
+Logical Volume Manager (LVM) is an advanced storage management system that provides flexible disk partitioning beyond traditional methods.
+
+Core Components:
+
+Physical Volume (PV): 
+    
+    Actual storage devices (HDDs, SSDs, partitions)
+    
+    Initialized with pvcreate /dev/sdX
+
+Volume Group (VG): 
+    
+    Pool of PVs that form shared storage
+     
+    Created with vgcreate vg_name /dev/sdX
+
+Logical Volume (LV):
+
+    Virtual partitions created from VG space
+
+    Made with lvcreate -L 10G -n lv_name vg_name
+
+Advantages Over Traditional Partitioning:
+
+✔Dynamic resizing without unmounting
+
+✔Combined storage from multiple disks
+
+✔Live snapshots for backups
+
+✔Easy storage migration
+
+---
+
 
