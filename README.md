@@ -4,7 +4,7 @@
 
 🌟 Introduction
 
-Born2beroot is a system administration project from 42 School. The goal of this project is to create a secure virtual machine using Debian or CentOS within a virtual environment like VirtualBox or UTM.
+Born2beroot is a system administration project from 42 School. The goal of this project is to create a secure virtual machine using Debian or Rocky within a virtual environment like VirtualBox or UTM.
 
 🔍 What You'll Do:
 
