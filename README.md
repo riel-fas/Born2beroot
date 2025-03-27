@@ -177,3 +177,30 @@ How It Works:
    *️⃣ Violations are either blocked or logged based on mode
 
 ---
+
+Difference between APT and Aptitude <a name="difference-between-apt-and-aptitude"></a>
+
+APT (Advanced Package Tool) and Aptitude are both package management tools for Debian-based systems, but with key differences:
+
+Key Advantages of Each:
+
+   ⏹APT:
+
+Simpler for basic operations
+
+Better for scripting (consistent output format)
+
+Default on most modern Debian systems
+
+   ⏹Aptitude:
+
+Better at resolving complex dependency issues
+
+Visual package browser (press ? for help)
+
+Marks packages as automatically/manually installed
+
+Keeps history of all package changes
+
+---
+
