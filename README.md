@@ -113,6 +113,7 @@ Portability: VMs can be moved between physical servers.
 ---
 
 What is LVM? <a name="what-is-lvm"></a>
+
 Logical Volume Manager (LVM) is an advanced storage management system that provides flexible disk partitioning beyond traditional methods.
 
 Core Components:
@@ -147,4 +148,30 @@ Advantages Over Traditional Partitioning:
 
 ---
 
+What is AppArmor? <a name="what-is-apparmor"></a>
 
+AppArmor (Application Armor) is a Linux security module that implements Mandatory Access Control (MAC) to restrict programs' capabilities through security profiles.
+
+
+Key Features:
+
+▶️Profile-based protection: Each application runs with explicitly defined permissions
+
+▶️Two enforcement modes:
+
+    Enforce: Actively blocks unauthorized actions
+
+    Complain: Logs violations without blocking (learning mode)
+
+▶️Path-based controls: Restricts access to files, network ports, and capabilities
+
+
+How It Works:
+
+*️⃣ System administrator creates security profiles for applications
+
+*️⃣ AppArmor intercepts system calls and checks them against profiles
+
+*️⃣ Violations are either blocked or logged based on mode
+
+---
