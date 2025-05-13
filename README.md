@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/OS-Debian/Rocky-blue?style=for-the-badge&logo=linux" alt="OS"> 
 <img src="https://img.shields.io/badge/VirtualBox-UTM-orange?style=for-the-badge&logo=virtualbox" alt="VirtualBox"> 
 <img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=42&logoColor=white)](https://42.fr))"> 
-<img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=42&logoColor=white)](https://42.fr))">  
+<img src="https://img.shields.io/badge/1337-000000?style=for-the-badge&logo=1337&logoColor=white)](https://1337.ma))">  
 </p> 
 <h1 align="center">🚀 Born2beroot 🚀</h1> 
 <p align="center"> <i>A system administration project from 42 School where you configure a secure virtual machine using Debian or Rocky.</i> </p>
